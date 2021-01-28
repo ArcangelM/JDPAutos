@@ -14,6 +14,7 @@ export class AppComponent {
 
    public mirol(){
     let mirol = localStorage.getItem('mirol');
+    
     return mirol;
    }
 
@@ -24,6 +25,11 @@ export class AppComponent {
    public myname(){
     let nombre = localStorage.getItem('name')
     return nombre;
+  }
+
+  public myOwner(){
+    let owner = localStorage.getItem('owner')
+    return owner;
   }
    
 }

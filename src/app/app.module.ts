@@ -25,6 +25,7 @@ import { RegisterVehicleComponent } from './components/register-vehicle/register
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import { EmployeeUpdateComponent } from './components/employee-update/employee-update.component';
+import {MatTableModule} from '@angular/material/table';
 
 import { UploadFileComponent } from './components/upload-file/upload-file.component';
 
@@ -34,6 +35,7 @@ import { OwnerRefreshTokenComponent } from './components/owner-refresh-token/own
 import { CambiarPasswordComponent } from './components/cambiar-password/cambiar-password.component';
 import { VehicleComponent } from './components/vehicle/vehicle.component';
 import { RepairComponent } from './components/repair/repair.component';
+import { TablaVehiculosComponent } from './components/tabla-vehiculos/tabla-vehiculos.component';
 
 
 @NgModule({
@@ -52,7 +54,8 @@ import { RepairComponent } from './components/repair/repair.component';
     OwnerRefreshTokenComponent,
     CambiarPasswordComponent,
     VehicleComponent,
-    RepairComponent
+    RepairComponent,
+    TablaVehiculosComponent
 
     
   ],
@@ -69,6 +72,7 @@ import { RepairComponent } from './components/repair/repair.component';
     MatGridListModule,
     MatPaginatorModule,
     MatCardModule,
+    MatTableModule,
     ImageUploadModule.forRoot()
     
 

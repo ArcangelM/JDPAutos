@@ -31,6 +31,7 @@ export class AuthService {
     localStorage.removeItem('token');
     localStorage.removeItem('mirol');
     localStorage.removeItem('myId');
+    localStorage.removeItem('owner');
     this.router.navigate(['./signin'])
   }
 

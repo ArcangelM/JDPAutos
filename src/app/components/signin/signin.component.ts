@@ -25,15 +25,16 @@ export class SigninComponent implements OnInit {
     this.authService.signIn(this.user)
       .subscribe(
         res =>{
-          //console.log(res);
-          if(res.message=="accedido"){
+          //console.log('respuesta',res);
+          //if(res.message=="accedido"){
+          if(res.id !=null){
           this.error=false;
           localStorage.setItem('mirol', res.role);
           localStorage.setItem('token', res.token);
           localStorage.setItem('myId',res.id);
           
           this.router.navigate(['/private']);
-
+          
         }
           else{
             this.error=true;

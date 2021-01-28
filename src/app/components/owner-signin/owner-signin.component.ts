@@ -27,16 +27,20 @@ export class OwnerSigninComponent implements OnInit {
         if (res.message == 'accedido') {
           this.error = false;
           localStorage.setItem('token', res.token);
+          localStorage.setItem('owner',res.id);
           this.router.navigate(['/private']);
+          console.log('respuesta en owner',res)
         } else if(res.message == this.text){
           this.openDialog("");
+
         }
         else {
           this.error = true;
         }
       },
       (err) => {this.error = true
-           this.openDialog(err);    
+           this.openDialog(err); 
+           console.log('el error',err);   
       }
     );
   }

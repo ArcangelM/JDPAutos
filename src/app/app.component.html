@@ -55,6 +55,7 @@
         </div>
     </div>
 </nav>
+
 <mat-grid-list cols="4" rowHeight="100px" *ngIf="authService.loggedIn()"> 
     <mat-grid-tile
         
@@ -76,6 +77,8 @@
     </mat-grid-tile>
     
 </mat-grid-list>
+
+<app-tabla-vehiculos></app-tabla-vehiculos>
 
 
 <br>
